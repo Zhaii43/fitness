@@ -120,8 +120,94 @@ export default function Signup() {
                 required
               />
             </div>
-            {/* Additional Form Fields */}
-            {/* ... */}
+            <div>
+              <label className="block text-sm font-medium mb-1">Last Name</label>
+              <input
+                type="text"
+                name="lastName"
+                placeholder="Enter Last Name"
+                className="w-full border px-4 py-2 rounded"
+                value={formData.lastName}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-medium mb-1">Email</label>
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter Email"
+                className="w-full border px-4 py-2 rounded"
+                value={formData.email}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-medium mb-1">Password</label>
+              <input
+                type="password"
+                name="password"
+                placeholder="Enter Password"
+                className="w-full border px-4 py-2 rounded"
+                value={formData.password}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-medium mb-1">Birthdate</label>
+              <input
+                type="date"
+                name="birthdate"
+                className="w-full border px-4 py-2 rounded"
+                value={formData.birthdate}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-medium mb-1">Gender</label>
+              <select
+                name="gender"
+                className="w-full border px-4 py-2 rounded"
+                value={formData.gender}
+                onChange={handleChange}
+                required
+              >
+                <option value="">Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div>
+              <label className="block text-sm font-medium mb-1">Country/Region</label>
+              <select
+                name="country"
+                className="w-full border px-4 py-2 rounded"
+                value={formData.country}
+                onChange={handleChange}
+              >
+                <option value="Philippines">Philippines</option>
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div className="flex items-center">
+              <input
+                type="checkbox"
+                name="newsletter"
+                className="mr-2"
+                checked={formData.newsletter}
+                onChange={handleChange}
+              />
+              <label className="text-sm">
+                Yes, I would like to receive email updates and offers from MapMyFitness and affiliates.
+              </label>
+            </div>
             <button
               type="submit"
               className="w-full bg-black text-white py-2 rounded font-bold hover:bg-gray-800"
