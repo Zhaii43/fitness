@@ -166,6 +166,32 @@ export default function Dashboard() {
           </section>
         )}
       </div>
+
+      {/* Footer */}
+      <footer className="bg-gray-800 text-white py-6 mt-auto">
+        <div className="max-w-7xl mx-auto px-6 flex justify-between">
+          <div>
+            <h5 className="text-xl font-semibold">MAPMYFITNESS</h5>
+            <p className="text-sm">Your fitness journey starts here.</p>
+          </div>
+          <div>
+            <ul className="space-y-2">
+              <li>
+                <Link href="#" className="hover:text-blue-400">Privacy Policy</Link>
+              </li>
+              <li>
+                <Link href="#" className="hover:text-blue-400">Terms of Service</Link>
+              </li>
+              <li>
+                <Link href="#" className="hover:text-blue-400">Contact Us</Link>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p className="text-sm">&copy; 2025 Developed by Hanzzzz. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }

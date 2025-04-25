@@ -126,6 +126,13 @@ export default function Login() {
           </form>
         </div>
       </div>
+
+      {/* Footer */}
+      <footer className="bg-transparent text-white py-6 mt-auto mb-4">
+        <div className="text-center">
+          <p>&copy; 2025 Developed by Hanzzzz. All Rights Reserved.</p>
+        </div>
+      </footer>
     </div>
   );
 }

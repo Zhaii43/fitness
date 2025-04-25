@@ -98,7 +98,7 @@ export default function Signup() {
 
       {/* Signup Form */}
       <div className="min-h-screen flex items-center justify-center bg-white text-black">
-        <div className="w-full max-w-md p-6 space-y-4 shadow-lg border rounded-md">
+        <div className="w-full max-w-md p-6 space-y-4 shadow-lg border rounded-md mb-10"> {/* Added margin-bottom */}
           <h1 className="text-2xl font-bold text-center">Welcome to MapMyFitness</h1>
           <p className="text-center text-sm">
             Already a member?{" "}
@@ -106,7 +106,7 @@ export default function Signup() {
               Log In
             </Link>
           </p>
-          <form onSubmit={handleSubmit} className="space-y-4">
+          <form onSubmit={handleSubmit} className="space-y-6">
             {/* Form Fields */}
             <div>
               <label className="block text-sm font-medium mb-1">First Name</label>
@@ -217,6 +217,13 @@ export default function Signup() {
           </form>
         </div>
       </div>
+
+      {/* Footer */}
+      <footer className="bg-transparent text-white py-6 mt-auto mb-10">
+        <div className="text-center">
+          <p>&copy; 2025 Developed by Hanzzzz. All Rights Reserved.</p>
+        </div>
+      </footer>
     </div>
   );
 }
