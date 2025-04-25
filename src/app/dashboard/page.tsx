@@ -175,19 +175,6 @@ export default function Dashboard() {
             <p className="text-sm">Your fitness journey starts here.</p>
           </div>
           <div>
-            <ul className="space-y-2">
-              <li>
-                <Link href="#" className="hover:text-blue-400">Privacy Policy</Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-blue-400">Terms of Service</Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-blue-400">Contact Us</Link>
-              </li>
-            </ul>
-          </div>
-          <div>
             <p className="text-sm">&copy; 2025 Developed by Hanzzzz. All rights reserved.</p>
           </div>
         </div>
